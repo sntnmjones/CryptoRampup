@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  application:
+    build: .
+    command: bash -c "python3 test.py"
+    container_name: crypto
+    volumes:
+      - .:/home

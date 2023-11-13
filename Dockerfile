@@ -8,7 +8,9 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /home
 
+# Add everything from the current dir to the newly created directory
 ADD . /home/
 
 RUN apt update
 
+RUN pip install -r requirements.txt

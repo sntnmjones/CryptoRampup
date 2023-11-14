@@ -3,7 +3,7 @@ version: '3'
 services:
   application:
     build: .
-    command: bash -c "python3 test.py"
+    command: bash -c "python3 lesson1_encrypt_decrypt.py"
     container_name: crypto
     volumes:
       - .:/home
